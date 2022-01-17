@@ -1,5 +1,3 @@
-Documentar github
-
 create database locadora;
 
 use locadora;
@@ -38,10 +36,3 @@ insert into filmes(nome_filme,preco_venda,genero,datalance) values
 	("O Gato de Botas",12.34,"Aventura","2011-06-12"),
 	("Shrek 2",13.30,"Comédia","2004-05-13"),
 	("O Protetor",12.50,"Ação","2011-08-12");
-
-
-
-
-
-
-
