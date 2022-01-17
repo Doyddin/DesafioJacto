@@ -1,0 +1,47 @@
+Documentar github
+
+create database locadora;
+
+use locadora;
+
+create table cliente(
+	id_cliente int not null primary key auto_increment,
+	cpf_cliente bigint(12) not null,
+	nome_cliente varchar(40) not null,	
+	rg int(9) not null,
+	endereco text not null,
+	numeroendereco int not null,
+	nascimento date not null,
+	telefone bigint(12) not null);
+
+create table filmes(
+	id_filme int not null primary key auto_increment,
+	nome_filme varchar(40) not null,
+	preco_venda decimal(4,2) not null,
+	genero varchar(20) not null,
+	datalance date not null);
+
+create table compras(
+	id_compra int not null primary key auto_increment,
+	nome_cliente varchar(40) not null,
+	cpf_cliente bigint(12) not null,
+	id_filme int not null,
+	nome_filme varchar(20) not null,
+	quando varchar(25) not null);
+
+
+insert into cliente(cpf_cliente,nome_cliente,rg,endereco,numeroendereco,nascimento,telefone) values
+	(122145648123,"João Ribeiro dos Santos",554322610,"15 de Novembro",211,"1986-06-13",11922146544),
+	(541241168947,"Rodrigo Fernandes Soarez",321141548,"Nelson Rossato",169,"1990-09-10",14921546654);
+
+insert into filmes(nome_filme,preco_venda,genero,datalance) values
+	("O Gato de Botas",12.34,"Aventura","2011-06-12"),
+	("Shrek 2",13.30,"Comédia","2004-05-13"),
+	("O Protetor",12.50,"Ação","2011-08-12");
+
+
+
+
+
+
+
