@@ -16,7 +16,7 @@ $nome_filme=$request->nome_filme;
 $dt = new DateTime();
 $date= $dt->format('Y-m-d H:i:s');
 
-$sql = "insert into compras(nome_cliente,cpf,id_filme,nome_filme,quando) values ('$nome_cliente','$cpf','$filme','$nome_filme','$date')";
+$sql = "insert into compras(nome_cliente,cpf_cliente,id_filme,nome_filme,quando) values ('$nome_cliente','$cpf','$filme','$nome_filme','$date')";
 $result=mysqli_query($conexao,$sql);
 
 if($result){
